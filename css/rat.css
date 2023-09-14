@@ -1,0 +1,236 @@
+@charset "UTF-8";
+
+/*html5doctor.com Reset Stylesheetv1.6.1Last Updated: 2010-09-17Author: Richard Clark - http://richclarkdesign.comTwitter: @rich_clark*/
+html, body, div, span, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,abbr, address, cite, code,del, dfn, em, img, ins, kbd, q, samp,small, strong, sub, sup, var,b, i,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, figcaption, figure,footer, header, hgroup, menu, nav, section, summary,time, mark, audio, video {margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;vertical-align: baseline;background: transparent;}
+body {line-height: 1;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+nav ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}
+a {margin: 0;padding: 0;font-size: 100%;vertical-align: baseline;background: transparent;}
+/* change colours to suit your needs */
+ins {background-color: #ff9;color: #000;text-decoration: none;}
+/* change colours to suit your needs */
+mark {background-color: #ff9;color: #000;font-style: italic;font-weight: bold;}
+del {text-decoration: line-through;}
+abbr[title], dfn[title] {border-bottom: 1px dotted;cursor: help;}
+table {border-collapse: collapse;border-spacing: 0;}
+/* change border colour to suit your needs */
+hr {display: block;height: 1px;border: 0;border-top: 1px solid #cccccc;margin: 1em 0;padding: 0;}
+input, select {vertical-align: middle;}
+/*---------------reset.css END----------------------------------------*/
+
+/* ヘッダー
+--------------------------------------------------------- */
+a:link		{ color: #434C90; text-decoration: none; background-color: transparent; }
+a:visited	{ color: #333a6a; text-decoration: none; background-color: transparent; }
+a:active	{ color: #FF6600; text-decoration: underline; }
+a:hover		{ color: #FF6600; text-decoration: underline; }
+
+table.headline a:link, table.headline a:visited {
+	color: #3333dd;
+	font-weight: bold;
+	font-size: 130%;
+}
+table.headline a:active, table.headline a:hover {
+	color: #FF6600;
+}
+
+/* Global
+--------------------------------------------------------- */
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	color:#fff;
+	background-color	: #006400;
+	font-size			: 10pt;
+	text-align			: left;
+	margin				: 0em;
+	font-family: 'Noto Sans JP', sans-serif;
+}
+.main {
+	flex: 1;
+}
+.header {
+	width				: 100%;
+}
+.submenu {
+	position			: absolute;
+	width				: 175px;
+	border				: none;
+}
+.article {
+	position			: absolute;
+	margin-left			: 175px;
+	width 				: 80%;
+	height:500px;
+	border				: none;
+}
+.box {
+	padding				: 0.05em;
+	border-color		: #aaaaaa;
+	width: auto;
+}
+
+/* ヘッダー
+--------------------------------------------------------- */
+.logo {
+	background-image: url(../images/logoback.png);
+    background-repeat: repeat;
+    margin: 0px 0px 19px 0px;
+    padding: 7px 50px 7px 50px;
+}
+
+/* サイドバー
+--------------------------------------------------------- */
+
+.submenu .bar{
+	height				: 21;
+	font-size			: 1.2rem;
+	border				: 1px solid #fff;
+	border-left			: 3px solid #fff;
+	margin				: 0px 0px 0px 2px;
+	padding-top 		: 0.2em;
+    padding-left: 10px;
+    line-height:2em;
+}
+.submenu .box {
+	border-left			: 1px solid;
+	border-right		: 1px solid;
+	border-bottom		: 1px solid;
+	margin				: 0px 0px 10px 2px;
+}
+.submenu ul {
+	font-family			:Arial;
+	padding: 15px 15px;
+    background-color: #006400;
+}
+.submenu li {
+	list-style: none;
+	height: 32px;
+    line-height: 32px;
+    background: #006400;
+    border-bottom: solid 1px #e4e4e4;
+}
+.submenu ul li a{
+	color: #fff;
+    text-decoration: none;
+    display: block;
+    padding-left: 12px;
+}
+.submenu ul li a:hover {
+	background: #fff;
+	color: #006400;
+	transition:0.5s;
+}
+.submenu p {
+	margin				: 5px 10px 5px 10px;
+	line-height: 1.8rem;
+}
+
+/* メイン
+--------------------------------------------------------- */
+.article {
+	position			: absolute;
+	margin-left			: 175px;
+	width 				: 80%;
+	border				: none;
+}
+.article .box {
+	margin				: 0px 4px 0px 4px;
+	padding				: 0em 1em 1em 1em;
+}
+.article .box p {
+	margin				: 1em 1em 1em 2em;
+	line-height			: 1.7;
+}
+#infomation ul{
+	width:70%;
+	margin-left		: 16px;
+	padding-left	: 10px;
+	
+}
+#infomation ul li {
+	list-style: none;
+	margin-bottom: 30px;
+	border-bottom	: 1px solid #fff;
+}
+#infomation ul li a{
+	color:inherit;
+}
+#infomation ul li a .date{
+	font-size:20px;
+	margin-bottom: 5px;
+}
+#infomation ul li a .ttl{
+	font-size:26px;
+}
+
+/* Headline
+--------------------------------------------------------- */
+h1 {
+	font-size			: 2rem;
+	height				: 30;
+	color				: #555555;
+	background-color	: #999999;
+	background-image	: url(../images/bar3.png);
+	background-repeat	: repeat-x;
+	border-right		: 1px solid #999999;
+	border-left			: 1px solid #999999;
+	border-bottom		: 1px solid #999999;
+	margin				: 0px 0px 0px 0px;
+	padding 			: 3px 1px 0px 4px;
+}
+h2 {
+	color				: #333;
+	font-weight			: normal;
+	border-width		: 0px 6px;
+	border-style		: double;
+	background-color	: #fff;
+	font-size			: 1.7rem;
+	padding				: 0.1em;
+	margin-bottom		: 1em;
+	padding-left		: 10px;
+}
+h3 {
+	font-size			: 120%;
+	border-bottom		: 3px solid #8888ff;
+	margin				: 0px;
+	margin-left			: 0.5em;
+	text-align			: left;
+	margin-top			: 1em;
+}
+h4 {
+	font-size			: 110%;
+	border-bottom		: 1px solid black;
+	margin-left			: 1em;
+	margin-top			: 1em;
+}
+h5{
+	font-size			:2rem;
+	color				:#000;
+}
+
+/* page.php
+--------------------------------------------------------- */
+.page_container p{
+	font-size:1.5rem;
+	margin-top:20px;
+	margin-left:30px;
+}
+
+/* フッター
+--------------------------------------------------------- */
+footer {
+	text-align			: center;
+	font-size			: 90%;
+	color				: #666699;
+	padding: 1.0em 0.5em 1.0em 2.0em;
+}
+hr{
+	height:1px;
+}
+address {
+	padding				: 1.0em 0.5em 2.0em 1.5em;
+}
